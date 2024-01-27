@@ -4,24 +4,33 @@
     <title>AR.js A-Frame Location and Marker-based</title>
     <style>
         body {
-            margin: 0;
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            margin: 0;
             background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
         }
-        iframe {
-            width: 49%; /* Adjust width to fit side by side */
-            height: 90vh; /* Adjust height as needed */
-            border: 2px solid #007bff; /* Add a border for visual separation */
+        a {
+            display: inline-block;
+            margin: 0 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
             border-radius: 5px;
-            margin: 5px; /* Add some space between the iframes */
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <iframe src="location.html" title="Location Based AR"></iframe>
-    <iframe src="marker.html" title="Marker Based AR"></iframe>
+    <div>
+        <a href="location.html">Location</a>
+        <a href="marker.html">Marker</a>
+    </div>
 </body>
 </html>
