@@ -10,34 +10,31 @@
       <a-marker preset="hiro">
         <a-box position="0 0.5 0" material="color: blue;"></a-box>
         <a-sphere position="1 0.5 0" radius="0.25" color="blue"></a-sphere>
-        <a-entity geometry="primitive: cone; radiusBottom: 0.25; radiusTop: 0.05; height: 0.5" 
-        position="-1 0.25 0" 
-        material="color: blue">
-        </a-entity>
+        <a-cone position="-1 0.25 0" radius-bottom="0.25" radius-top="0.05" height="0.5" color="blue"></a-cone>
       </a-marker>
 
       <a-sphere
         gps-entity-place="latitude: 41.78801; longitude: 20.90680"
         material="color: red"
-        radius="0.5"
+        radius="2" 
         position="0 1.5 0"
       ></a-sphere>
 
       <a-box
         gps-entity-place="latitude: 41.78801; longitude: 20.90680"
         material="color: red"
-        depth="1"
-        height="1"
-        width="1"
-        position="1 1.5 0"
+        depth="4" height="4" width="4"
+        position="5 2 0"
       ></a-box>
 
-      <a-entity
+      <a-cone
         gps-entity-place="latitude: 41.78801; longitude: 20.90680"
-        geometry="primitive: cone; radiusBottom: 0.5; radiusTop: 0.1; height: 1"
-        material="color: red"
-        position="-1 0.5 0"
-      ></a-entity>
+        position="-5 1 0"  
+        radius-bottom="2" 
+        radius-top="0.2" 
+        height="4" 
+        color="red"
+      ></a-cone>
 
       <a-entity camera></a-entity>
     </a-scene>
